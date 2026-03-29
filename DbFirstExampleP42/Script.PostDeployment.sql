@@ -1,28 +1,28 @@
-﻿INSERT INTO CarMakers (Title, Country) VALUES
-('Toyota', 'Japan'),
-('Honda', 'Japan'),
-('Ford', 'USA'),
-('Chevrolet', 'USA'),
-('Tesla', 'USA'),
-('BMW', 'Germany'),
-('Audi', 'Germany'),
-('Mercedes-Benz', 'Germany'),
-('Volkswagen', 'Germany'),
-('Subaru', 'Japan'),
-('Nissan', 'Japan'),
-('Hyundai', 'South Korea'),
-('Kia', 'South Korea'),
-('Mazda', 'Japan'),
-('Lexus', 'Japan'),
-('Acura', 'Japan'),
-('Infiniti', 'Japan'),
-('Cadillac', 'USA'),
-('Lincoln', 'USA'),
-('Volvo', 'Sweden');
+﻿INSERT INTO CarMakers (Title, Country, FoundedYear) VALUES
+('Toyota', 'Japan', 1937),
+('Honda', 'Japan', 1948),
+('Ford', 'USA', 1903),
+('Chevrolet', 'USA', 1911),
+('Tesla', 'USA', 2003),
+('BMW', 'Germany', 1916),
+('Audi', 'Germany', 1909),
+('Mercedes-Benz', 'Germany', 1926),
+('Volkswagen', 'Germany', 1937),
+('Subaru', 'Japan', 1953),
+('Nissan', 'Japan', 1933),
+('Hyundai', 'South Korea', 1967),
+('Kia', 'South Korea', 1944),
+('Mazda', 'Japan', 1920),
+('Lexus', 'Japan', 1989),
+('Acura', 'Japan', 1986),
+('Infiniti', 'Japan', 1989),
+('Cadillac', 'USA', 1902),
+('Lincoln', 'USA', 1917),
+('Volvo', 'Sweden', 1927);
 
 
 INSERT INTO Cars (MakeId, Model, Year, Color, InStock, Price) VALUES
-(1, 'Camry', 2020, 'Red', 1, 24000.00),
+(1, 'Camry', 2020, 'Red', 1, 24000.00), -- 1
 (2, 'Civic', 2019, 'Blue', 1, 22000.00),
 (3, 'Mustang', 2021, 'Black', 0, 35000.00),
 (4, 'Impala', 2018, 'White', 1, 18000.00),
@@ -85,3 +85,58 @@ INSERT INTO Reviews (CarId, Comment, Rating) VALUES
 (18, 'High-end features but pricey.', 4),
 (19, 'Comfortable but not very exciting.', 3),
 (20, 'Safe and reliable with good performance.', 4);
+
+
+INSERT INTO AdditionalOptions (Title) VALUES
+('Sunroof'),
+('Leather Seats'),
+('Navigation System'),
+('Bluetooth Connectivity'),
+('Backup Camera'),
+('Heated Seats'),
+('Premium Sound System'),
+('Remote Start'),
+('Blind Spot Monitoring'),
+('Apple CarPlay/Android Auto');
+
+INSERT INTO CarAdditionalOptions (CarId, OptionId) VALUES
+(1, 1), -- Camry with Sunroof
+(1, 2), -- Camry with Leather Seats
+(2, 3), -- Civic with Navigation System
+(2, 4), -- Civic with Bluetooth Connectivity
+(3, 5), -- Mustang with Backup Camera
+(3, 6), -- Mustang with Heated Seats
+(4, 7), -- Impala with Premium Sound System
+(4, 8), -- Impala with Remote Start
+(5, 9), -- Model 3 with Blind Spot Monitoring
+(5, 10), -- Model 3 with Apple CarPlay/Android Auto
+(6, 1), -- 3 Series with Sunroof
+(6, 2), -- 3 Series with Leather Seats
+(7, 3), -- A4 with Navigation System
+(7, 4), -- A4 with Bluetooth Connectivity
+(8, 5), -- C-Class with Backup Camera
+(8, 6), -- C-Class with Heated Seats
+(9, 7), -- Passat with Premium Sound System
+(9, 8), -- Passat with Remote Start
+(10, 9), -- Outback with Blind Spot Monitoring
+(10, 10), -- Outback with Apple CarPlay/Android Auto
+(11, 1), -- Altima with Sunroof
+(11, 2), -- Altima with Leather Seats
+(12, 3), -- Elantra with Navigation System
+(12, 4), -- Elantra with Bluetooth Connectivity
+(13, 5), -- Optima with Backup Camera
+(13, 6), -- Optima with Heated Seats
+(14, 7), -- 6 with Premium Sound System
+(14, 8), -- 6 with Remote Start
+(15, 9), -- ES with Blind Spot Monitoring
+(15, 10), -- ES with Apple CarPlay/Android Auto
+(16, 1), -- TLX with Sunroof
+(16, 2), -- TLX with Leather Seats
+(17, 3), -- Q50 with Navigation System
+(17, 4), -- Q50 with Bluetooth Connectivity
+(18, 5), -- CTS with Backup Camera
+(18, 6), -- CTS with Heated Seats
+(19, 7), -- MKZ with Premium Sound System
+(19, 8), -- MKZ with Remote Start
+(20, 9), -- S60 with Blind Spot Monitoring
+(20, 10);-- S60 with Apple CarPlay/Android Auto
